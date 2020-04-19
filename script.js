@@ -7,6 +7,26 @@ contex.font = '35pt Times New Rowan';
 contex.fillStyle = 'black';
 contex.fillText('BUANGLAH SAMPAH PADA TEMPATNYA',290 ,150);
 
+// tong 1
+contex.font = '24pt Times New Rowan';
+contex.fillStyle = 'black';
+contex.fillText('TUTUP',5 ,550);
+
+// tong 2
+contex.font = '24pt Times New Rowan';
+contex.fillStyle = 'black';
+contex.fillText('SETENGAH',165 ,550);
+
+contex.font = '24pt Times New Rowan';
+contex.fillStyle = 'black';
+contex.fillText('BUKA',205 ,580);
+
+// tong 3
+contex.font = '24pt Times New Rowan';
+contex.fillStyle = 'black';
+contex.fillText('BUKA',410 ,550);
+
+
 
 function draw() {
 
