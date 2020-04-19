@@ -38,10 +38,10 @@ var tPP1 = 150;
 contex.fillStyle='salmon';
 contex.fillRect(10, 350, pPP1, tPP1);
 
-contex.fillStyle='salmon';
+contex.fillStyle='#A9E1E9';
 contex.fillRect(200, 350, pPP1, tPP1);
 
-contex.fillStyle='salmon';
+contex.fillStyle='#B6B8F1';
 contex.fillRect(400, 350, pPP1, tPP1);
    
 //tutup
@@ -76,7 +76,7 @@ contex.fillStyle='black';
 contex.fillRect(325, 365, pPP2, tPP2)
 
 //pegangan
-contex.fillStyle='blue';
+contex.fillStyle='#A9E1E9';
 contex.fillRect(361, 347, pPP3, tPP3);
 
 
@@ -100,7 +100,7 @@ contex.fillStyle='black';
 contex.fillRect(407, 365, pPP2, tPP2)
 
 //pegangan
-contex.fillStyle='blue';
+contex.fillStyle='#B6B8F1';
 contex.fillRect(445, 347, pPP3, tPP3);
 
 }
