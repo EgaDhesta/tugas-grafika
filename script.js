@@ -3,27 +3,86 @@ var contex = myCanvas.getContext('2d');
 myCanvas.width=myCanvas.scrollWidth;
 myCanvas.height=myCanvas.scrollHeight;
 
+contex.font = '35pt Times New Rowan';
+contex.fillStyle = 'black';
+contex.fillText('BUANGLAH SAMPAH PADA TEMPATNYA',290 ,150);
+
+
 function draw() {
-    //1
-    var panjangPP1 = 100;
-    var tinggiPP1 = 150;
-    
-    contex.fillStyle='red';
-    contex.fillRect(10, 350, panjangPP1, tinggiPP1);
-    
-    //tutup
-    var panjangPP2 = 100;
-    var tinggiPP2 = 30;
 
-    contex.fillStyle='gray';
-    contex.fillRect(10, 320, panjangPP2, tinggiPP2);
+//1
+var pPP1 = 100;
+var tPP1 = 150; 
 
-    //pegangan
-    var panjangPP3 = 23;
-    var tinggiPP3 = 18;
-    contex.fillStyle='black';
-    contex.fillRect(47, 302, panjangPP3, tinggiPP3);
+// badan
+contex.fillStyle='salmon';
+contex.fillRect(10, 350, pPP1, tPP1);
 
-    contex.fillStyle='red';
-    contex.fillRect(350, 350, panjangPP1, tinggiPP1);
-    }
+contex.fillStyle='salmon';
+contex.fillRect(200, 350, pPP1, tPP1);
+
+contex.fillStyle='salmon';
+contex.fillRect(400, 350, pPP1, tPP1);
+   
+//tutup
+var pPP2 = 100;
+var tPP2 = 30;
+contex.fillStyle='black';
+contex.fillRect(10, 320, pPP2, tPP2);
+
+//pegangan
+var pPP3 = 23;
+var tPP3 = 18;
+contex.fillStyle='blue';
+contex.fillRect(50, 302, pPP3, tPP3);
+
+// bayangan tutup 2 bawah
+contex.strokeStyle='gray';
+contex.strokeRect(200, 320, pPP2, tPP2);
+
+// bayangan pegangan tutup 2 bawah
+contex.strokeStyle='gray';
+contex.strokeRect(240, 300, pPP3, tPP3);
+
+
+// 2
+
+contex.translate(313,-66);                        
+contex.rotate((Math.PI/100) * 25); 
+contex.translate(-150, -80); 
+
+// tutup
+contex.fillStyle='black';
+contex.fillRect(325, 365, pPP2, tPP2)
+
+//pegangan
+contex.fillStyle='blue';
+contex.fillRect(361, 347, pPP3, tPP3);
+
+
+// 3
+
+contex.translate(313,-70); 
+contex.rotate(Math.PI/4); 
+contex.translate(-99, -330); 
+
+// bayang tutup 2 atas
+contex.strokeStyle='gray';
+contex.strokeRect(407, 566, pPP2, tPP2)
+
+//bayangan pegangan tutup 2 atas
+contex.strokeStyle='gray';
+contex.strokeRect(445, 547, pPP3, tPP3);
+
+
+// tutup
+contex.fillStyle='black';
+contex.fillRect(407, 365, pPP2, tPP2)
+
+//pegangan
+contex.fillStyle='blue';
+contex.fillRect(445, 347, pPP3, tPP3);
+
+}
+draw();
+
